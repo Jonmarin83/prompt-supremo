@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prompt Supremo V2.1</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Generador de Prompts Supremo</h1>
+    <form method="post">
+        <textarea name="user_input" rows="5" cols="60" placeholder="Escribe aquí tu solicitud..."></textarea><br>
+        <input type="submit" value="Generar Prompt">
+    </form>
+    {% if result %}
+        <h2>Resultado:</h2>
+        <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>
